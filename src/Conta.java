@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
     //Parametros de Ua classe
     private int agencia;
     private int numero;
@@ -38,6 +38,9 @@ public class Conta {
 
     }
 
+    public abstract void gerarExtrato();
+
+
     public double getSaldo(){
         return this.saldo;
     }
@@ -70,6 +73,16 @@ public class Conta {
 
     public static int getTotalDeContas() {
         return totalDeContas;
+    }
+
+    @Override
+    public String toString() {
+        return "Conta{" +
+                "agencia=" + agencia +
+                ", numero=" + numero +
+                ", titular=" + titular +
+                ", saldo=" + saldo +
+                '}';
     }
 }
 

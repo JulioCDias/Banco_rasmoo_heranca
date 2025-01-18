@@ -44,4 +44,12 @@ public class Cliente {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
 }

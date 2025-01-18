@@ -16,5 +16,8 @@ public class TestePolimorfismo {
         System.out.println("O saldo da Conta Corrente é: "+cc.getSaldo());
         System.out.println("O saldo da Conta Poupança é: "+cp.getSaldo());
         System.out.println("O saldo da Conta Poupança é: "+cp.getSaldo());
+
+        System.out.println(cc);
+        System.out.println(cp);
     }
 }
